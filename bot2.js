@@ -35,7 +35,7 @@ client.on('messageCreate', async (message) => {
 
   if (message.author.bot) return;
 
-  if (message.author.id === '1246786098139758675') {
+  if (message.author.id === '1240723686386958451') {
     waitingForNewMessage = true;
     console.log('Waiting for a new message from a different author...');
     return;

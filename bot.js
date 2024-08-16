@@ -32,7 +32,7 @@ client.once('ready', () => {
 client.login(process.env.token);
 
 client.on('messageCreate', async (message) => {
-  if (message.channel.id !== '1246786098139758675') return;
+  if (message.channel.id !== '966546228110311506') return;
 
   if (message.author.bot) return;
 
