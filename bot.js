@@ -73,7 +73,7 @@ client.on('messageCreate', async (message) => {
 
     if (result !== undefined) {
       message.channel.send(`${result}`);
-      setTimeout(() => {}, 150);
+      setTimeout(() => {}, 400);
     }
   };
 
