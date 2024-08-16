@@ -38,14 +38,12 @@ client.on('messageCreate', async (message) => {
 
   if (message.author.id === '1246786098139758675') {
     waitingForNewMessage = true;
-    console.log('Waiting for a new message from a different author...');
     return;
   }
 
   // Reset waitingForNewMessage if it's already true, indicating a new message from a different author
   if (waitingForNewMessage) {
     waitingForNewMessage = false;
-    console.log('Received a new message from a different author.');
   }
 
   // Update the latest message ID
@@ -73,7 +71,7 @@ client.on('messageCreate', async (message) => {
 
     if (result !== undefined) {
       message.channel.send(`${result}`);
-      setTimeout(() => {}, 400);
+      setTimeout(() => {}, 600);
     }
   };
 
